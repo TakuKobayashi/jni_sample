@@ -13,7 +13,6 @@ extern "C" {
   JNIEXPORT jintArray JNICALL Java_com_taku_kobayashi_jnisample_MainActivity_changepixels(JNIEnv* env, jobject thiz, jintArray colors, jint w, jint h){
 	  jint* bmpColors = (*env)->GetIntArrayElements(env, colors, 0);
 	  for (int i = 0; i < (w * h); ++i){
-
 	  }
 	  (*env)->ReleaseIntArrayElements(env, colors, bmpColors, 0);
 	  return null;
